@@ -1,5 +1,5 @@
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/egorgasay/gotils)
-![GitHub issues](https://img.shields.io/github/issues/egorgasay/gotils)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/egorgasay/gotilsold)
+![GitHub issues](https://img.shields.io/github/issues/egorgasay/gotilsold)
 ![License](https://img.shields.io/badge/license-MIT-green)
 # gotils
 
