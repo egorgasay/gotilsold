@@ -16,7 +16,7 @@ arr := []int{1, 2, 3, 4, 5, 6}
 gotils.ReverseUnsafe(arr)
 fmt.Println(arr) // [6 5 4 3 2 1]
 ```
-## Note: Panics if it is not an array or 
+## Note: Panics if it is not an array or  Panics if it is not an array or a *[]interface{}
 ## To avoid panic use gotils.Reverse(obj any)
 
 # Reverse (Safe)
@@ -24,7 +24,7 @@ fmt.Println(arr) // [6 5 4 3 2 1]
 arr := []int{1, 2, 3, 4, 5, 6}
 err := gotils.Reverse(arr)
 if err != nil { 
-    fmt.Printf("Oops, an error was occured: %v\n", err)
+    fmt.Printf("Oops, an error has occurred: %v\n", err)
 } else {
     fmt.Println(arr) 
 }

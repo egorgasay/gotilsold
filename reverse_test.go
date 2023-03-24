@@ -11,8 +11,8 @@ func Test_Reverse(t *testing.T) {
 	}
 	type testCase struct {
 		name    string
-		arg     any
-		want    any
+		arg     interface{}
+		want    interface{}
 		wantErr bool
 	}
 	tests := []testCase{
@@ -75,8 +75,8 @@ func Test_ReverseUnsafe(t *testing.T) {
 	}
 	type testCase struct {
 		name      string
-		arg       any
-		want      any
+		arg       interface{}
+		want      interface{}
 		wantPanic bool
 	}
 	tests := []testCase{
