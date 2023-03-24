@@ -1,3 +1,3 @@
-module github.com/egorgasay/gotils
+module github.com/egorgasay/gotilsold
 
 go 1.12

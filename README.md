@@ -1,7 +1,9 @@
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/egorgasay/gotilsold)
 ![GitHub issues](https://img.shields.io/github/issues/egorgasay/gotilsold)
 ![License](https://img.shields.io/badge/license-MIT-green)
-# gotils
+# gotilsold (Go v.12+)
+
+## If you have almost the latest version of go, you'd better use [this](https://github.com/egorgasay/gotils).
 
 ## Collection of implementations of useful functions for the Go language
 
