@@ -1,6 +1,6 @@
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/egorgasay/gotils)
 ![GitHub issues](https://img.shields.io/github/issues/egorgasay/gotils)
-![GitHub](https://img.shields.io/github/license/egorgasay/gotils)
+![License](https://img.shields.io/badge/license-MIT-green)
 # gotils
 
 ## Collection of implementations of useful functions for the Go language
