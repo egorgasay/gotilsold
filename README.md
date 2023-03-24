@@ -20,6 +20,7 @@ fmt.Println(arr) // [6 5 4 3 2 1]
 ## To avoid panic use gotils.Reverse(obj any)
 
 # Reverse (Safe)
+## Slightly slower than ReverseUnsafe
 ```go
 arr := []int{1, 2, 3, 4, 5, 6}
 err := gotils.Reverse(arr)

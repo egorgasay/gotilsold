@@ -143,3 +143,23 @@ func Test_ReverseUnsafe(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkBetterReverser(b *testing.B) {
+	testValuesForSafeReverser := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	testValuesForUnsafeReverser := make([]int, len(testValuesForSafeReverser))
+	copy(testValuesForUnsafeReverser, testValuesForSafeReverser)
+	b.ResetTimer()
+
+	b.Run("Unsafe Reverse", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			ReverseUnsafe(testValuesForSafeReverser)
+		}
+	})
+
+	b.Run("Safe Reverse", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			_ = Reverse(testValuesForSafeReverser)
+		}
+	})
+}

@@ -8,6 +8,7 @@ import (
 var ErrWrongType = errors.New("wrong type")
 
 // Reverse Safe way to reverse an array
+// NOTE: Slightly slower than ReverseUnsafe
 func Reverse(arr interface{}) (err error) {
 	defer func() {
 		if recover() != nil {
@@ -22,8 +23,8 @@ func Reverse(arr interface{}) (err error) {
 	return nil
 }
 
-// ReverseUnsafe Safe way to reverse an array
-// NOTE: Panics if it is not an array or a *[]interface{}
+// ReverseUnsafe Unsafe, but fast way to reverse an array
+// NOTE: Panics if arg is not an array or a *[]interface{}
 func ReverseUnsafe(arr interface{}) {
 	n := reflect.ValueOf(arr).Len()
 	swap := reflect.Swapper(arr)
